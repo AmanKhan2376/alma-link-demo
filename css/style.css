@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #121212;
 }
@@ -193,3 +197,4 @@ body {
     transform: translateY(-10px);
     transition: 0.4s ease;
 }
+
