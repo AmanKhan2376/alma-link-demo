@@ -1,0 +1,183 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#login-btn, #sign-up-btn, #join-now-btn {
+    transition: 0.3s ease, color 0.3s ease;
+}
+
+#login-btn:hover, #sign-up-btn:hover, #join-now-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Navbar container */
+#navbar {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 12px 24px;
+    position: sticky;
+    top: 0;
+}
+
+/* Inside navbar */
+#navbar-div {
+    max-width: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo + name */
+#website-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+}
+
+/* Website logo image */
+#website-logo img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Website name text */
+#website-name {
+    color: #1e7eff;     
+    font-size: 1.5rem;   
+}
+
+
+/* Login Button */ 
+#login-btn {
+    height: 30px;
+    width: 80px;
+    background-color: #1e7eff;
+    border: solid 1px #1e7eff;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+/* Login Button Hover */
+#login-btn:hover {
+    background-color: #4a30f4;  /* darker shade */
+    cursor: pointer;
+}
+
+/* Sign Up Button */ 
+#sign-up-btn {
+    height: 30px;
+    width: 80px;
+    background-color: #ffffff;
+    border: solid 1px #1e7eff;
+    border-radius: 5px;
+    color: #1e7eff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Sign Up Button Hover */
+#sign-up-btn:hover {
+    background-color: #4a30f4;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+/* Welcome Container */
+#welcome-div {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, #1e7eff, #4a30f4);
+    color: #ffffff;
+    padding: 80px 32px;
+}
+
+#welcome-div h1 {
+    font-size: 4rem;
+}
+
+#welcome-div p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Join now Button */ 
+#join-now-btn {
+    height: 44px;
+    width: 100px;
+    background-color: #ffffff;
+    border: solid 1px #1e7eff;
+    border-radius: 10px;
+    color: #1e7eff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#join-now-btn:hover {
+    background-color: #00c6ff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+#features-div {
+    width: 100%;
+    height: auto;
+    padding: 72px 30px;
+    background-color: #ffffff;
+}
+
+#features-div h2 {
+    color: #1e7eff;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+#feature-card-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-card {
+    color: #ffffff;
+    max-width: 400px;
+    height: auto;
+    background-color: #1e7eff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.feature-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+}
+
+/* Hover effect */
+.feature-card:hover {
+    transform: translateY(-10px);
+    transition: 0.4s ease;
+}
