@@ -30,7 +30,7 @@
 
         <div id="form-div">
             <p>Select Your Role</p>
-            <select>
+            <select id="getUserType">
                 <option value="student">Student</option>
                 <option value="alumni">Alumni</option>
                 <option value="faculty">Faculty</option>
@@ -38,16 +38,19 @@
                 <option value="admin">Admin</option>
             </select>
             <p>Email</p>
-            <input type="email" placeholder="Enter your email">
+            <input type="email" placeholder="Enter your email" id="getUserEmail">
             <p>Password</p>
-            <input type="password" placeholder="Enter your password">
+            <input type="password" placeholder="Enter your password" id="getUserPwd">
             <button id="log-in-btn">Log In</button>
             <div id="sign-up-text">
                 <p>Don't have an account?</p>
-                <a href="#">Sign up here</a>
+                <a href="../html/signup.html">Sign up here</a>
             </div>
         </div>
     </section>
+
+    <!-- Script -->
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
