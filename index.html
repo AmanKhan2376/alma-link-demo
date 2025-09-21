@@ -4,25 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AlmaLink connects alumni and students through networking, mentorship, and collaboration.">
+    <meta name="keywords" content="Alumni, Networking, Mentorship, Collaboration, TKIET">
+    <meta name="author" content="Team AlmaLink, TKIET">
     <title>AlmaLink Demo</title>
     <!-- Link to CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav id="navbar">
+    <header id="navbar">
         <div id="navbar-div">
             <a href="#" id="website-logo">
-                <img src="assets/logos/graduation-hat.png" alt="graduation-hat">
+                <img src="assets/logos/graduation-hat.png" alt="AlmaLink Logo">
                 <h1 id="website-name">AlmaLink</h1>
             </a>
-            <div>
+            <nav>
                 <button id="login-btn">Login</button>
                 <button id="sign-up-btn">Sign Up</button>
-            </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
     <!-- Welcome -->
     <div id="welcome-div">
@@ -31,53 +33,90 @@
         <button id="join-now-btn">Join Now</button>
     </div>
 
-    <!-- Features -->
-    <div id="features-div">
-        <h2 id="features-title">Everything you need to stay connected</h2>
-        <p id="features-tag">Powerful tools designed to strengthen alumni relationships and drive meaningful collaboration</p>
-        <div id="feature-cards-div">
-            <div class="feature-cards">
-                <img src="assets/logos/group-people.png" alt="Group People Icon">
-                <h3>Centralized Alumni Directory</h3>
-                <p>Secure, searchable database for alumni profiles, achievements, and career progress</p>
+    <main>
+        <!-- Features -->
+        <section id="features-div">
+            <h2 id="features-title">Everything you need to stay connected</h2>
+            <p id="features-tag">Powerful tools designed to strengthen alumni relationships and drive meaningful
+                collaboration</p>
+            <div id="feature-cards-div">
+                <div class="feature-cards">
+                    <img src="assets/logos/group-people.png" alt="Group People Icon">
+                    <h3>Centralized Alumni Directory</h3>
+                    <p>Secure, searchable database for alumni profiles, achievements, and career progress</p>
+                </div>
+                <div class="feature-cards">
+                    <img src="assets/logos/network-hub.png" alt="Network Hub Icon">
+                    <h3>AI-Powered Networking Hub</h3>
+                    <p>Smart algorithms suggest meaningful connections, mentors, and job opportunities</p>
+                </div>
+                <div class="feature-cards">
+                    <img src="assets/logos/collaboration.png" alt="Collaboration Icon">
+                    <h3>Project Collaboration Hub (GitHub-Inspired)</h3>
+                    <p>Alumni & students co-create projects with contribution tracking, activity graphs, and recognition
+                    </p>
+                </div>
+                <div class="feature-cards">
+                    <img src="assets/logos/community-hub.png" alt="Community Hub Icon">
+                    <h3>Real-Time Community Hub (Discord/Telegram-Style)</h3>
+                    <p>Topic-based chats, voice/video rooms, and moderated discussions</p>
+                </div>
+                <div class="feature-cards">
+                    <img src="assets/logos/fundraising.png" alt="Fundraising Icon">
+                    <h3>Blockchain-Secured Donation Portal</h3>
+                    <p>Ensures transparency and trust in fundraising campaigns and contributions</p>
+                </div>
+                <div class="feature-cards">
+                    <img src="assets/logos/mentorship.png" alt="Mentorship Icon">
+                    <h3>Career & Mentorship Engine</h3>
+                    <p>AI-driven matching of students with alumni mentors, career advisors, and recruiters</p>
+                </div>
+                <div class="feature-cards">
+                    <img src="assets/logos/engagement-dashboard.png" alt="Dashboard Icon">
+                    <h3>Engagement Dashboard</h3>
+                    <p>Analytics for administrators to track alumni activity, event success, and fundraising growth</p>
+                </div>
+                <div class="feature-cards">
+                    <img src="assets/logos/earth-location.png" alt="Location Icon">
+                    <h3>Alumni GeoConnect</h3>
+                    <p>Geo-spatial mapping (Mapbox/Google Maps API) for alumni discovery, proximity-based networking,
+                        and
+                        event localization</p>
+                </div>
             </div>
-            <div class="feature-cards">
-                <img src="assets/logos/network-hub.png" alt="Network Hub Icon">
-                <h3>AI-Powered Networking Hub</h3>
-                <p>Smart algorithms suggest meaningful connections, mentors, and job opportunities</p>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-top-div">
+            <div class="footer-top-card">
+                <h3>Quick Links</h3>
+                <a href="#">About Us</a>
+                <a href="">FAQ</a>
+                <a href="">Privacy Policy</a>
             </div>
-            <div class="feature-cards">
-                <img src="assets/logos/collaboration.png" alt="Collaboration Icon">
-                <h3>Project Collaboration Hub (GitHub-Inspired)</h3>
-                <p>Alumni & students co-create projects with contribution tracking, activity graphs, and recognition</p>
-            </div>
-            <div class="feature-cards">
-                <img src="assets/logos/community-hub.png" alt="Community Hub Icon">
-                <h3>Real-Time Community Hub (Discord/Telegram-Style)</h3>
-                <p>Topic-based chats, voice/video rooms, and moderated discussions</p>
-            </div>
-            <div class="feature-cards">
-                <img src="assets/logos/fundraising.png" alt="Fundraising Icon">
-                <h3>Blockchain-Secured Donation Portal</h3>
-                <p>Ensures transparency and trust in fundraising campaigns and contributions</p>
-            </div>
-            <div class="feature-cards">
-                <img src="assets/logos/mentorship.png" alt="Mentorship Icon">
-                <h3>Career & Mentorship Engine</h3>
-                <p>AI-driven matching of students with alumni mentors, career advisors, and recruiters</p>
-            </div>
-            <div class="feature-cards">
-                <img src="assets/logos/engagement-dashboard.png" alt="Dashboard Icon">
-                <h3>Engagement Dashboard</h3>
-                <p>Analytics for administrators to track alumni activity, event success, and fundraising growth</p>
-            </div>
-            <div class="feature-cards">
-                <img src="assets/logos/earth-location.png" alt="Location Icon">
-                <h3>Alumni GeoConnect</h3>
-                <p>Geo-spatial mapping (Mapbox/Google Maps API) for alumni discovery, proximity-based networking, and event localization</p>
+            <div class="footer-top-card">
+                <h3>Contact Us</h3>
+                <div class="card-item">
+                    <img src="assets/logos/earth.png" alt="Location">
+                    <p>123 University, City, State 12345</p>
+                </div>
+                <div class="card-item">
+                    <img src="assets/logos/email.png" alt="Email">
+                    <p>alumni@university.edu</p>
+                </div>
+                <div class="card-item">
+                    <img src="assets/logos/phone.png" alt="Phone">
+                    <p>+91 0000000000</p>
+                </div>
             </div>
         </div>
-    </div>
+        <hr>
+        <div id="footer-end-div">
+            <p>© 2025 AlmaLink. Where Alumni Stay Connected.</p>
+            <p>Made by team AlmaLink of TKIET, Warnanagar</p>
+        </div>
+    </footer>
 
     <!-- Link to JS -->
     <script src="js/script.js"></script>
