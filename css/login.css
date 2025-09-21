@@ -1,0 +1,135 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    /* horizontal centering */
+    justify-content: center;
+    /* vertical centering */
+    align-items: center;
+}
+
+#login-form {
+    width: 448px;
+}
+
+#go-back {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+#go-back img {
+    height: 16px;
+    width: 16px;
+}
+
+#go-back p {
+    font-size: 1rem;
+}
+
+#website-logo {
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+#website-logo img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+#website-name {
+  color: #9590FF;
+  font-size: 1.5rem;
+}
+
+#welcome-text {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+#welcome-text h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+#form-div {
+    border: none;
+    border: 1px solid #2A2A2A;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #121212;
+}
+
+#form-div input, button, select {
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+}
+
+#form-div input, select {
+    background: #2A2A2A;
+    padding-left: 10px;
+}
+
+#form-div select {
+    color: #fff;
+}
+
+button {
+    margin-top: 24px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #9590FF;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    transform: translateY(-2px);
+    background-color: #7F7CFF;
+}
+
+button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+#sign-up-text {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+#sign-up-text a {
+    text-decoration: none;
+}
+
+#sign-up-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 440px) {
+    body {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 380px) {
+    #sign-up-text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
