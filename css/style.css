@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    color-scheme: dark;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
     background-color: #121212;
     padding: 12px 24px;
     position: sticky;
+    z-index: 1000; /* ensures it stays on top of other elements */
     top: 0;
 }
 
@@ -99,6 +101,20 @@ body {
 }
 
 
+@media (max-width: 370px) {
+    #website-logo img {
+        height: 24px;
+        width: 24px;
+    }
+    #website-name {
+        font-size: 1rem;
+    }
+    #login-btn, #sign-up-btn {
+        font-size: 0.8rem;
+        width: 60px;
+    }
+}
+
 /* Welcome Container */
 #welcome-div {
     width: 100%;
@@ -164,7 +180,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 32px;
+    gap: 20px;
 }
 
 .feature-cards {
@@ -198,3 +214,67 @@ body {
     transition: 0.4s ease;
 }
 
+
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+#footer-top-div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 20px;
+}
+
+@media (max-width: 425px) {
+    #footer-top-div {
+        align-items: start;
+        flex-direction: column;
+    }
+}
+
+.footer-top-card {
+    flex: 1;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-top-card a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.card-item {
+    display: flex;
+    gap: 10px;
+}
+
+.card-item img {
+    width: 20px;
+    height: 20px;
+}
+
+#footer-end-div {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+@media (max-width: 750px) {
+    #footer-end-div {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }    
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background-color: #2A2A2A;
+}
