@@ -1,0 +1,283 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* Shared Button */
+.button {
+  height: 40px;
+  width: 100px;
+  padding: 0 16px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Navbar */
+#navbar {
+  width: 100%;
+  background-color: #121212;
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#navbar-div {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#website-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#website-logo img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+#website-name {
+  color: #9590FF;
+  font-size: 1.5rem;
+}
+
+/* Specific Button Colors */
+#login-btn {
+  background-color: #9590ff;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+#login-btn:hover {
+  background-color: #7F7CFF;
+}
+
+#sign-up-btn {
+  background-color: #fff;
+  color: #9590FF;
+  border: 1px solid #2A2A2A;
+}
+
+#sign-up-btn:hover {
+  background-color: #9590FF;
+  color: #fff;
+}
+
+#join-now-btn {
+  background-color: #9590FF;
+  border: 1px solid #000;
+  border-radius: 10px;
+  color: #fff;
+  width: 150px;
+}
+
+#join-now-btn:hover {
+  background-color: #7F7CFF;
+}
+
+/* Responsive navbar */
+@media (max-width: 425px) {
+  #website-logo img {
+    height: 24px;
+    width: 24px;
+  }
+  #website-name {
+    font-size: 1rem;
+  }
+  #login-btn, #sign-up-btn {
+    font-size: smaller;
+    width: auto;
+    height: 24px;
+  }
+}
+
+/* Welcome Section */
+#welcome-div {
+  width: 100%;
+  padding: 80px 32px;
+  text-align: center;
+}
+
+#welcome-div h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+#welcome-div p {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Features Section */
+#features-div {
+  width: 100%;
+  padding: 72px 30px;
+  background-color: #121212;
+}
+
+#features-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#features-tag {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+#feature-cards-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-card {
+  color: #fff;
+  max-width: 400px;
+  background-color: #9590FF;
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.feature-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  #feature-cards-div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Center footer top cards as a group */
+#footer-top-div {
+  display: flex;
+  justify-content: space-around;    /* center the row of cards */
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;            /* allow wrapping on narrow screens */
+}
+
+/* Make each footer card a stable, centered block */
+.footer-top-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* When stacked on small screens, keep each card centered horizontally */
+@media (max-width: 425px) {
+  #footer-top-div {
+    flex-direction: column;
+  }
+  .footer-top-card {
+    height: auto;
+  }
+}
+
+
+.footer-top-card a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-top-card a:hover {
+  text-decoration: underline;
+}
+
+.footer-top-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-top-card ul li {
+    margin-bottom: 10px;
+}
+
+.card-item {
+  display: flex;
+  gap: 10px;
+}
+
+.card-item img {
+  width: 20px;
+  height: 20px;
+}
+
+#footer-end-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+@media (max-width: 750px) {
+  #footer-end-div {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+footer hr {
+  border: none;
+  height: 1px;
+  background-color: #2A2A2A;
+}
