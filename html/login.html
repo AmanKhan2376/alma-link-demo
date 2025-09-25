@@ -6,44 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlmaLink | Login</title>
 
-    <!-- Styles -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
-    <section id="login-form">
-        <a id="go-back" href="../index.html">
-            <img src="../assets/logos/back-arrow.png" alt="Home button">
-            <p>Back to Home</p>
+    <section id="login-section">
+        <!-- Back to Home -->
+        <a id="back-home" href="../index.html">
+            <img src="../assets/logos/back-arrow.png" alt="Back to Home">
+            <span>Back to Home</span>
         </a>
 
-        <a href="#" id="website-logo">
-            <img src="../assets/logos/graduation-hat.png" alt="AlmaLink Logo">
-            <h1 id="website-name">AlmaLink</h1>
-        </a>
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="../assets/logos/graduation-hat.png" alt="AlmaLink Logo" class="logo-img">
+            <h1 class="logo-text">AlmaLink</h1>
+        </div>
 
-        <div id="welcome-text">
+        <!-- Welcome Text -->
+        <div class="welcome-text">
             <h2>Welcome Back</h2>
             <p>Login to your account</p>
         </div>
 
-        <div id="form-div">
-            <p>Select Your Role</p>
-            <select id="getUserType">
+        <!-- Login Form -->
+        <div id="login-form-container">
+            <label for="user-role">Select Your Role</label>
+            <select id="user-role">
+                <option value="">--Choose Role--</option>
                 <option value="student">Student</option>
                 <option value="alumni">Alumni</option>
                 <option value="faculty">Faculty</option>
                 <option value="recruiter">Recruiter</option>
                 <option value="admin">Admin</option>
             </select>
-            <p>Email</p>
-            <input type="email" placeholder="Enter your email" id="getUserEmail">
-            <p>Password</p>
-            <input type="password" placeholder="Enter your password" id="getUserPwd">
-            <button id="log-in-btn">Log In</button>
-            <div id="sign-up-text">
-                <p>Don't have an account?</p>
+
+            <label for="user-email">Email</label>
+            <input type="email" placeholder="Enter your email" id="user-email">
+
+            <label for="user-password">Password</label>
+            <input type="password" placeholder="Enter your password" id="user-password">
+
+            <button id="login-btn-login">Log In</button>
+
+            <!-- Sign Up Link -->
+            <div id="signup-text">
+                <span>Don't have an account?</span>
                 <a href="../html/signup.html">Sign up here</a>
             </div>
         </div>
