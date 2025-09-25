@@ -1,0 +1,108 @@
+/* ================== Reset & Base Styles ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+}
+
+body {
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* ================== Navbar ================== */
+#navbar {
+    width: 100%;
+    background-color: #121212;
+    padding: 12px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    color: #9590FF;
+    font-size: 1.5rem;
+}
+
+#notification-icon {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+#profile-icon {
+    height: 30px;
+    width: 30px;
+    margin: 0px 20px 0px 20px;
+}
+
+
+
+
+#welcome-text {
+    text-align: center;
+    margin: 50px;
+    font-size: 4rem;
+}
+
+
+
+#option-cards-container {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
+
+.option-card {
+    height: auto;
+    width: 280px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    background-color: #9590FF;
+}
+
+.option-card img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.option-card button {
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    color: #9590FF;
+    background-color: #ffffff;
+    font-size: 1rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+}
